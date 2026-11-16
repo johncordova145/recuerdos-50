@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Celebremos Mis 50 Años!</title>
+    <!-- Google Fonts para un toque más natural y elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #d4af37; /* Dorado elegante */
+            --dark-color: #2c2c2c;
+            --light-bg: #fdfbf7;
+            --card-bg: #ffffff;
+            --accent-color: #8b5a2b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            overflow: hidden;
+            padding: 30px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0e6d2;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+            font-style: italic;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin: 35px 0 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-color);
+            margin: 8px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Galería de Memorias */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .photo-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .photo-card p {
+            padding: 12px;
+            font-size: 0.95rem;
+            color: #444;
+            font-weight: 500;
+        }
+
+        /* Sección de Dirección y Evento */
+        .event-info {
+            background: #fff8eb;
+            border: 1px dashed var(--primary-color);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .event-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        .event-info p {
+            margin: 8px 0;
+            font-size: 1.05rem;
+        }
+
+        /* Adaptabilidad móvil estricta */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px 10px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .photo-card img {
+                height: 190px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- SECCIÓN DE BIENVENIDA -->
+        <header>
+            <h1>¡Te invito, ven y disfruta de mis 50 años!</h1>
+            <p>Una vida llena de momentos inolvidables, risas, aprendizajes y, sobre todo, el amor de las personas que más amo. ¡Acompáñame a celebrar este gran hito!</p>
+        </header>
+
+        <!-- APARTADO: MIS PADRES Y RAÍCES -->
+        <h2 class="section-title">Mis Padres y Mi Papá</h2>
+        <div class="gallery-grid">
+            <div class="photo-card">
+                <!-- Reemplaza el src con la ruta de tu imagen optimizada -->
+                <img src="img/papa_hijo.jpg" alt="Con mi papá">
+                <p>Momentos invaluables con mi padre, pilar de mi vida.</p>
+            </div>
+            <div class="photo-card">
+                <img src="img/padres.jpg" alt="Mis padres">
+                <p>El amor y la guía de quienes me dieron todo.</p>
+            </div>
+        </div>
+
+        <!-- APARTADO: ABUELOS Y SUEGROS -->
+        <h2 class="section-title">Legado: Abuelos y Suegros</h2>
+        <div class="gallery-grid">
+            <div class="photo-card">
+                <img src="img/abuelos.jpg" alt="Mis abuelos">
+                <p>La sabiduría y la ternura de nuestros abuelos.</p>
+            </div>
+            <div class="photo-card">
+                <img src="img/suegros.jpg" alt="Con mis suegros">
+                <p>Apreciados momentos compartidos en familia.</p>
+            </div>
+        </div>
+
+        <!-- APARTADO: CUÑADOS Y TODA LA FAMILIA -->
+        <h2 class="section-title">Familia y Cuñados</h2>
+        <div class="gallery-grid">
+            <div class="photo-card">
+                <img src="img/cunados.jpg" alt="Con los cuñados">
+                <p>La alegría y el compañerismo de los cuñados.</p>
+            </div>
+            <div class="photo-card">
+                <img src="img/familia_completa.jpg" alt="Toda la familia">
+                <p>Toda la familia reunida celebrando con el corazón.</p>
+            </div>
+        </div>
+
+        <!-- INFORMACIÓN Y DIRECCIÓN -->
+        <div class="event-info">
+            <h3>Detalles de la Celebración</h3>
+            <p><strong>Fecha y Hora:</strong> [Insertar Fecha y Hora aquí]</p>
+            <p><strong>Dirección:</strong> [Insertar la dirección exacta del evento aquí]</p>
+            <p>¡Te esperamos para compartir emociones encontradas y mucha alegría!</p>
+        </div>
+    </div>
+
+</body>
+</html>
